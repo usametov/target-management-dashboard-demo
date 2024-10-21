@@ -63,3 +63,7 @@ Your submission will be evaluated based on the following criteria:
 If you have any questions about the assignment, please don't hesitate to reach out to wendy@analyst3.ai.
 
 Good luck, and we look forward to seeing your submission!
+
+## Notes
+
+Your submission will be used for the purpose of this interview only and will not be shared with any third parties or used for any other purpose. You can share, reuse, and modify the code for your own portfolio if you wish.
