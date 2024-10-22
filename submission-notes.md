@@ -5,9 +5,9 @@ To manage and track changes to the pipeline statuses of targets, we'll need to d
 We'll use a relational database management system like MySQL or PostgreSQL. The schema will consist of one tables
 
 1. **cdc_log**:
-	* entity_id
-    * lock_id  
+	* entity_id    
 	* entity_type
+    * lock_id  
 	* message	
 	* timestamp	
 
@@ -29,4 +29,12 @@ This strategy provides several benefits, including:
 * **Audit trail**: We can maintain a history of changes to the pipeline status, which can be useful for auditing and tracking purposes.
 * **Data consistency**: The use of transactions and locking mechanisms ensures that data is consistent and accurate.
 * **Error handling**: We can catch and handle errors that may occur during the update process, which can help prevent data corruption.
+
+**Edge Cases**
+
+Error handling is an essential aspect of building a robust and user-friendly application. We can set up a generic error page to handle errors and display custom error messages to users while hiding system error information.
+
+Another thing, we need to discuss with business team how to deal with null pipeline statuses. Null values often cause troubles.
+
+
 

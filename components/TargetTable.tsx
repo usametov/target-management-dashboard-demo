@@ -6,12 +6,12 @@ const TargetTable: React.FC<TargetsTableProps> = ({targets}) => {
       <table className="table-auto w-full">
         <thead className="bg-blue-200">
           <tr>
-            <th className="px-4 py-2 text-left text-sm font-medium text-gray-900">ID</th>
-            <th className="px-4 py-2 text-left text-sm font-medium text-gray-900">Name</th>
-            <th className="px-4 py-2 text-left text-sm font-medium text-gray-900">Description</th>
-            <th className="px-4 py-2 text-left text-sm font-medium text-gray-900">Pipeline Status</th>
-            <th className="px-4 py-2 text-left text-sm font-medium text-gray-900">Markets</th>
-            <th className="px-4 py-2 text-left text-sm font-medium text-gray-900">Last Updated</th>
+            <th className="px-4 py-2 text-left text-sm font-bold text-gray-900">ID</th>
+            <th className="px-4 py-2 text-left text-sm font-bold text-gray-900">Name</th>
+            <th className="px-4 py-2 text-left text-sm font-bold text-gray-900">Description</th>
+            <th className="px-4 py-2 text-left text-sm font-bold text-gray-900">Pipeline Status</th>
+            <th className="px-4 py-2 text-left text-sm font-bold text-gray-900">Markets</th>
+            <th className="px-4 py-2 text-left text-sm font-bold text-gray-900">Last Updated</th>
           </tr>
         </thead>
         <tbody>
