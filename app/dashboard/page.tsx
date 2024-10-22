@@ -44,9 +44,8 @@ export default function Dashboard() {
 
   return (
     <div className="p-8">      
-      <h1 className="text-2xl font-bold mb-4">Target Management Dashboard</h1>
-      <Filter onFilterChange={handleFilterChange} />
-      <p className="text-3xl font-bold mb-4">Acquisition Targets</p>
+      <h1 className="text-3xl font-bold mb-4">Acquisition Targets Management Dashboard</h1>
+      <Filter onFilterChange={handleFilterChange} />      
       <BarChart data={transformedData}/>
       <hr/>
       <TargetTable targets={filteredData}/>
