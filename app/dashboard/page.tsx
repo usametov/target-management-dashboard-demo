@@ -5,6 +5,8 @@ import { useEffect, useState } from "react";
 import {Target, TargetsTableProps} from "@/lib/types";
 import TargetTable from "@/components/TargetTable";
 import {getPipelineStatusCounts, filterTargets} from "@/lib/helpers";
+import { FaFilter } from 'react-icons/fa';
+import {MdDashboard} from 'react-icons/md'
 
 export default function Dashboard() {
 
@@ -44,8 +46,17 @@ export default function Dashboard() {
 
   return (
     <div className="p-8">      
-      <h1 className="text-3xl font-bold mb-4">Acquisition Targets Management Dashboard</h1>
-      <Filter onFilterChange={handleFilterChange} />      
+      <h1 className="text-3xl font-bold mb-4 flex items-center">
+      <MdDashboard className="mr-2 text-gray-500" />
+      <div className="w-3/4 flex justify-left">
+        Acquisition Target Management Dashboard 
+      </div>
+      
+      <div className="w-1/4 flex justify-end"> <Filter onFilterChange={handleFilterChange} >      
+        <FaFilter className="mr-2" />
+      </Filter></div>   
+      
+      </h1>
       <BarChart data={transformedData}/>
       <hr/>
       <TargetTable targets={filteredData}/>
