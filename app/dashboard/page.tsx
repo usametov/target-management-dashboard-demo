@@ -18,7 +18,6 @@ export default function Dashboard() {
   const [options, setOptions] = useState({});
 
   useEffect(() => {
-    // fetch data from API or other source
     fetch('/api/targets')
       .then(response => response.json())
       .then(data => setData(data));
@@ -27,7 +26,7 @@ export default function Dashboard() {
   const filteredData = filterTargets(data, filter);
   const pipelineStatusCounts = getPipelineStatusCounts(filteredData);
 
-  const labels = Object.keys(pipelineStatusCounts); //.filter(k=>k!="null");
+  const labels = Object.keys(pipelineStatusCounts); //.filter(k=>k!="null"); //TODO: clarify this with business 
   const targets = Object.values(pipelineStatusCounts);
 
   const transformedData = {
@@ -47,7 +46,7 @@ export default function Dashboard() {
     <div className="p-8">      
       <h1 className="text-2xl font-bold mb-4">Target Management Dashboard</h1>
       <Filter onFilterChange={handleFilterChange} />
-      <p>Bar chart and target table</p>
+      <p className="text-3xl font-bold mb-4">Acquisition Targets</p>
       <BarChart data={transformedData}/>
       <hr/>
       <TargetTable targets={filteredData}/>

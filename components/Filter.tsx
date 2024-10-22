@@ -15,7 +15,7 @@ const Filter: React.FC<FilterProps> = ({ onFilterChange }) => {
 
   return (
     <div>
-      <label>Filter:</label>
+      <label>Filter targets:</label>
       <input type="text" value={filter} onChange={handleFilterChange} />
     </div>
   );
