@@ -6,3 +6,8 @@ export interface Target {
     markets: string[];
     lastUpdated: string;
   }
+  
+
+export interface TargetsTableProps {
+    targets: Target[];
+  }

@@ -1,4 +1,4 @@
-import {Target, TargetsTableProps} from "./target";
+import {Target, TargetsTableProps} from "@/lib/types";
 
 const TargetTable: React.FC<TargetsTableProps> = ({targets}) => {
   return (
